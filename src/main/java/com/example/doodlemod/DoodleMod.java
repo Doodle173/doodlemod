@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.example.doodlemod;
 
 import org.slf4j.Logger;
 
@@ -14,16 +14,16 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(ExampleMod.MODID)
-public class ExampleMod {
+@Mod(DoodleMod.MODID)
+public class DoodleMod {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "examplemod";
+    public static final String MODID = "doodlemod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
+    public DoodleMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
